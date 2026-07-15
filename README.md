@@ -21,9 +21,12 @@ This is a weather app backend only which lets you search for weather from any ci
 7. It can delete a saved search
 
 # Setup/How to Run
+
 1. Clone this repository
-git clone <your-repo-link>
-cd <folder-name>
+```
+git clone https://github.com/jawariahassan2001-cmd/weather-app-backend.git
+cd weather-app-backend
+```
 
 2. Create a virtual environment
 python -m venv venv
@@ -46,32 +49,63 @@ http://127.0.0.1:8000/docs
 
 
 ## API endpoints
-GET /about: return my name and PM accelarator desc.
+
+## GET /about
+ return my name and PM accelarator desc.
 Sample: {
   "developer": "Jawaria Hassan",
   "pm_accelerator_description": "The Product Manager Accelerator Program is designed to support PM professionals through every stage of their careers. From students looking for entry-level jobs to Directors looking to take on a leadership role, our program has helped over hundreds of students fulfill their career aspirations. Our Product Manager Accelerator community are ambitious and committed. Through our program they have learnt, honed and developed new PM and leadership skills, giving them a strong foundation for their future endeavors. Learn more at https://www.pmaccelerator.io/"
 }
-GET /searches:  Returns a list of all saved past searches.
-POST /searches:  Takes a city name then fetches real weather data, and saves it.
-PUT /searches:   Refetches fresh weather for a saved search and then update it.
-DELETE /searches: Removes already saved search from the database. 
+
+## GET /searches
+Returns a list of all saved past searches.
+
+## POST /searches
+Takes a city name then fetches real weather data, and saves it.
+
+## PUT /searches
+Refetches fresh weather for a saved search and then update it.
+
+## DELETE /searches
+Removes already saved search from the database. 
 
 # Structure of Weather App Project:
-## app 
-__init__.py : makes this folder a proper Python package
-main.py : API routes
-database.py : database connection
-models.py : database table
-schemas.py : input/output validation
-crud.py : create/read/update/delete logic
-weather_service.py: talks to the weather API
+# app 
+## __init__.py 
+ makes this folder a proper Python package
 
-requirements.txt: list of packages needed
-.env.example: template showing what environment variables are needed
-.gitignore:  tells git what not to upload
-README.md: this file
+## main.py
+API routes
 
-Note: .env, venv/, and weather.db are excluded from this repo (see .gitignore) — venv/ gets recreated when you install requirements, weather.db gets created automatically when the app runs, and .env needs to be set up manually with your own API key.
+## database.py 
+database connection
+
+## models.py
+ database table
+
+## schemas.py 
+input/output validation
+
+## crud.py
+ create/read/update/delete logic
+
+## weather_service.py
+ talks to the weather API
+
+## requirements.txt
+ list of packages needed
+
+## .env.example
+ template showing what environment variables are needed
+
+## .gitignore
+  tells git what not to upload
+
+## README.md 
+this file
+
+# Note
+ .env, venv/, and weather.db are excluded from this repo (see .gitignore) — venv/ gets recreated when you install requirements, weather.db gets created automatically when the app runs, and .env needs to be set up manually with your own API key.
 
 
 
