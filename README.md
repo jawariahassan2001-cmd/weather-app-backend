@@ -1,7 +1,7 @@
--Weather App Backend
+# Weather App Backend
 This is a weather app backend only which lets you search for weather from any city and then it also saves your past searches.
 
--Tech Stack
+## Tech Stack
 1. FastAPI
 2. Uvicorn
 3. SQLAlchemy
@@ -11,7 +11,7 @@ This is a weather app backend only which lets you search for weather from any ci
 7. SQLite (database)
 8. OpenWeatherMap API (weather data)
 
--Features
+## Features
 1. by typing a city name you can search weather
 2. it shows current weather like temp, conditions, humidity, wind.
 3. Shows 5-day forecast
@@ -20,7 +20,7 @@ This is a weather app backend only which lets you search for weather from any ci
 6. can update a saved search to get fresh weather
 7. It can delete a saved search
 
--Setup/How to Run
+# Setup/How to Run
 1. Clone this repository
 git clone <your-repo-link>
 cd <folder-name>
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 http://127.0.0.1:8000/docs
 
 
--API endpoints
+## API endpoints
 GET /about: return my name and PM accelarator desc.
 Sample: {
   "developer": "Jawaria Hassan",
@@ -56,8 +56,8 @@ POST /searches:  Takes a city name then fetches real weather data, and saves it.
 PUT /searches:   Refetches fresh weather for a saved search and then update it.
 DELETE /searches: Removes already saved search from the database. 
 
--Structure of Weather App Project:
-app: 
+# Structure of Weather App Project:
+## app 
 __init__.py : makes this folder a proper Python package
 main.py : API routes
 database.py : database connection
