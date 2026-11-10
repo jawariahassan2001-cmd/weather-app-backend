@@ -51,10 +51,8 @@ http://127.0.0.1:8000/docs
 ## API endpoints
 
 ## GET /about
-{
-  "developer": "Jawaria Hassan",
-  "pm_accelerator_description": "The Product Manager Accelerator Program is designed to support PM professionals through every stage of their careers. From students looking for entry-level jobs to Directors looking to take on a leadership role, our program has helped over hundreds of students fulfill their career aspirations. Our Product Manager Accelerator community are ambitious and committed. Through our program they have learnt, honed and developed new PM and leadership skills, giving them a strong foundation for their future endeavors. Learn more at https://www.pmaccelerator.io/"
-}
+Developer: Jawaria Hassan,
+pm_accelerator_description:The Product Manager Accelerator Program is designed to support PM professionals through every stage of their careers. From students looking for entry-level jobs to Directors looking to take on a leadership role, our program has helped over hundreds of students fulfill their career aspirations. Our Product Manager Accelerator community are ambitious and committed. Through our program they have learnt, honed and developed new PM and leadership skills, giving them a strong foundation for their future endeavors. Learn more at https://www.pmaccelerator.io/
 
 ## GET /searches
 Returns a list of all saved past searches.
